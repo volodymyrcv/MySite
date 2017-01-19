@@ -1,0 +1,9 @@
+body {width:900px; border:2px dashed red; font-family:Georgia, serif;}
+body>header {background-color:white; position:fixed; top:0; width:900px;}
+nav a {color:blue; font-size:20pt; text-decoration:none;}
+nav a:visited {color:blue;}
+nav a:first-child {font-weight:bold; text-decoration:underline;}
+li:first-letter {color:red; font-variant:small-caps;}
+#portfolio li {display:inline;}
+.controls {width:50px; cursor:pointer;}
+.project {height:150px; margin:20px; float:none;}

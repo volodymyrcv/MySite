@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Мій сайт - версія для мобільних пристроїв (>450px < 900px)</title>
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+    <header>
+        <nav><a href="#information">Про мене</a>    |   <a href="#portfolio">Портфоліо</a> | <a href="#contacts">Контакти</a></nav>
+    </header>
+    <section id="information">
+        <header>
+            <h2>Серебрянський Володимир</h2>
+        </header>
+        <p>До вашої уваги пропонується персональна веб-сторінка учня 220 групи курсу 
+            <span>HTML/CSS/JavaScript Fundamentals</span> від компанії 
+            <span><i>Soft Serve</i></span> - Серебрянського Володимира</p>
+        <img src="img/head.png" alt="Автор сайту">
+        <ul>
+            <li>Народився в місті Чернівці</li>
+            <li>Закінчив університет за спеціальністю "Інформатика"</li>
+            <li>Заочною формою навчання здобув рівень освіти - "Бакалавр"</li>
+        </ul>
+    </section>
+    <hr>
+    <section id="portfolio">
+        <header>
+            <h1>Портфоліо</h1>
+        </header>
+        <div>
+            <img src="img/left.png" class="controls" alt="Попередній проект" style="float:left">
+            <div style="float:left">
+                <a href="https://ninjamock.com/s/5RVDH"><img src="img/portfolio/mockup_mysite_mobile.png" class="project" alt="Макет цього сайту" title="MockUp"></a>
+                <a href="https://volodymyrcv.github.io/SS_kourse/"><img src="img/portfolio/html_forms.png" class="project" alt="Сайт 3 заняття: HTML форми і таблиці" title="HTML форми"></a>
+            </div>
+            <img src="img/right.png" class="controls" alt="Наступний проект">
+        </div>
+    </section>
+    <footer id="contacts">
+        <h3>Контакти</h3>
+        <p>м.Чернівці    |  тел. (012) 345 67 89</p>
+        <form method="POST" action="formspree.io/gameundercover@bk.ru">
+            <input type="email" minlength="5" placeholder="Ваша електронна пошта | Email" required>
+            <br>
+            <input type="tel" pattern="\(\d{3}\)\s\d{3}\s\d{2}\s\d{2}" placeholder="(987) 654 32 10" title="(987) 654 32 10">
+            <br>
+            <input minlength="2" placeholder="Ваше ім'я" required>
+            <br>
+            <select name="theme">
+                <option value="quest" selected>Питання</option>
+                <option value="prop">Пропозиція</option>
+                <option value="critic">Відгук</option>
+            </select>
+            <br>
+            <textarea name="comment" cols="47" rows="5" required placeholder="Коментар"></textarea>
+            <br>
+            <input type="Submit" class="button">
+            <input type="Reset" class="button">
+        </form>
+    </footer>
+</body>
+</html>

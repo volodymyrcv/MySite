@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Мій сайт - версія для персональних комп'ютерів (>900px)</title>
+    <link rel="stylesheet" href="css/desktop.css">
+</head>
+<body>
+    <header>
+        <nav><a href="#information">Про мене</a> | <a href="#portfolio">Портфоліо</a> | <a href="#contacts">Контакти</a></nav>
+        <hr>
+    </header>
+    <section id="information">
+        <header>
+            <h2>Серебрянський Володимир</h2>
+        </header>
+        <img src="img/head.png" alt="Автор сайту">
+        <p>До вашої уваги пропонується персональна веб-сторінка учня 220 групи курсу <b>HTML/CSS/JavaScript Fundamentals</b> від компанії <b><i>Soft Serve</i></b> - Серебрянського Володимира</p>
+        <h4>Загальна інформація:</h4>
+        <ul>
+            <li>Народився в м.Чернівці</li>
+            <li>Закінчив університет за спеціальністю "Інформатика"</li>
+            <li>Заочною формою навчання здобув рівень освіти - "Бакалавр"</li>
+        </ul>
+    </section>
+    <section id="portfolio">
+        <header>
+            <h1>Портфоліо</h1>
+        </header>
+        <ul>
+            <li><img src="img/left.png" class="controls" alt="Попередній проект"></li>
+            <li><a href="https://ninjamock.com/s/5RVDH"><img src="img/portfolio/mockup_mysite_desktop.png" class="project" alt="Макет цього сайту" title="MockUp"></a></li>
+            <li><a href="https://volodymyrcv.github.io/HCJ_SS/"><img src="img/portfolio/html_some_tags.png" class="project" alt="Сторінка 2 заняття: HTML теґи" title="HTML теґи"></a></li>
+            <li><a href="https://volodymyrcv.github.io/SS_kourse/"><img src="img/portfolio/html_forms.png" class="project" alt="Сайт 3 заняття: HTML форми і таблиці" title="HTML форми"></a></a></li>
+            <li><img src="img/right.png" class="controls" alt="Наступний проект"></li>
+        </ul>
+    </section>
+    <footer id="contacts">
+        <h1>Контакти</h1>
+        <ul>
+            <li>Місто Чернівці</li>
+            <li>Мобільний телефон - (012) 345 67 89</li>
+        </ul>
+        <form method="POST" action="formspree.io/gameundercover@bk.ru">
+            <table>
+                <tr><th>Електронна пошта:</th><td><input type="email" minlength="5" placeholder="my@post.ua" required></td></tr>
+                <tr><th>Номер телефону:</th><td><input type="tel" pattern="\(\d{3}\)\s\d{3}\s\d{2}\s\d{2}" placeholder="(987) 654 32 10" title="(987) 654 32 10"></td></tr>
+                <tr><th>Ім'я:</th><td><input minlength="2" placeholder="Ваше ім'я" required></td></tr>
+                <tr><th>Тема</th><td>
+                    <select name="theme">
+                        <option value="quest" selected>Питання</option>
+                        <option value="prop">Пропозиція</option>
+                        <option value="critic">Відгук</option>
+                    </select>
+                </td></tr>
+                <tr><td colspan="2"><textarea name="comment" cols="40" rows="5" required placeholder="Коментар"></textarea></td></tr>
+                <tr><td><button>Надіслати</button></td><td><button type="reset">Очистити</button></td></tr>
+            </table>
+        </form>
+    </footer>
+</body>
+</html>
