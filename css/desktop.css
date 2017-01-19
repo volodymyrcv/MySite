@@ -1,9 +1,24 @@
-body {width:900px; border:2px dashed red; font-family:Georgia, serif;}
+body {width:900px; border:2px dashed red; font:14pt Georgia, serif; line-height: 18pt; text-align:justify;}
 body>header {background-color:white; position:fixed; top:0; width:900px;}
-nav a {color:blue; font-size:20pt; text-decoration:none;}
+nav a {color:blue; font-size:16pt; margin-left:135px; text-decoration:none;}
 nav a:visited {color:blue;}
 nav a:first-child {font-weight:bold; text-decoration:underline;}
+h2 {font-size:19pt; text-align: center}
+#information img {filter:drop-shadow(10px 10px 50px yellow); -webkit-filter:drop-shadow(5px 10px 30px yellow); float:left; padding:25px; height:230px;}
+p {text-indent:15pt; padding:15px;}
+p span {font-weight:bold}
+h4 {text-align:center;}
 li:first-letter {color:red; font-variant:small-caps;}
+#portfolio {margin-top:40px; text-align:center;}
 #portfolio li {display:inline;}
 .controls {width:50px; cursor:pointer;}
-.project {height:150px; margin:20px; float:none;}
+.project {height:170px; margin:20px; float:none;}
+footer h3 {text-decoration:underline;text-align:center;}
+input, select {font-size:12pt; width:97%;}
+input::placeholder,textarea::placeholder {color:Green;}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {color:Green;}
+input::-moz-placeholder,textarea::-moz-placeholder {color:Green;}
+input::-ms-input-placeholder,textarea::-ms-input-placeholder {color:Green;}
+textarea {resize:none; font-size:12pt;}
+.button {width:200px;font-size:12pt;}
+hr {box-shadow:2px 0px 15px 1px aqua}

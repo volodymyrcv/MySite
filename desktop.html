@@ -7,15 +7,21 @@
 </head>
 <body>
     <header>
-        <nav><a href="#information">Про мене</a> | <a href="#portfolio">Портфоліо</a> | <a href="#contacts">Контакти</a></nav>
-        <hr>
+        <nav>
+            <a href="#information">Про мене</a>
+            <a href="#portfolio">Портфоліо</a>
+            <a href="#contacts">Контакти</a>
+        </nav>
     </header>
     <section id="information">
         <header>
             <h2>Серебрянський Володимир</h2>
         </header>
         <img src="img/head.png" alt="Автор сайту">
-        <p>До вашої уваги пропонується персональна веб-сторінка учня 220 групи курсу <b>HTML/CSS/JavaScript Fundamentals</b> від компанії <b><i>Soft Serve</i></b> - Серебрянського Володимира</p>
+        <p>До вашої уваги пропонується персональна веб-сторінка учня 220 групи курсу 
+            <span>HTML/CSS/JavaScript Fundamentals</span> від компанії 
+            <span><i>Soft Serve</i></span> - Серебрянського Володимира
+        </p>
         <h4>Загальна інформація:</h4>
         <ul>
             <li>Народився в м.Чернівці</li>
@@ -36,13 +42,10 @@
         </ul>
     </section>
     <footer id="contacts">
-        <h1>Контакти</h1>
-        <ul>
-            <li>Місто Чернівці</li>
-            <li>Мобільний телефон - (012) 345 67 89</li>
-        </ul>
+        <h3>Контакти</h3>
         <form method="POST" action="formspree.io/gameundercover@bk.ru">
             <table>
+                <tr><th>Місто Чернівці</th><th>Мобільний телефон: (012) 345 67 89</th></tr>
                 <tr><th>Електронна пошта:</th><td><input type="email" minlength="5" placeholder="my@post.ua" required></td></tr>
                 <tr><th>Номер телефону:</th><td><input type="tel" pattern="\(\d{3}\)\s\d{3}\s\d{2}\s\d{2}" placeholder="(987) 654 32 10" title="(987) 654 32 10"></td></tr>
                 <tr><th>Ім'я:</th><td><input minlength="2" placeholder="Ваше ім'я" required></td></tr>
@@ -53,10 +56,12 @@
                         <option value="critic">Відгук</option>
                     </select>
                 </td></tr>
-                <tr><td colspan="2"><textarea name="comment" cols="40" rows="5" required placeholder="Коментар"></textarea></td></tr>
-                <tr><td><button>Надіслати</button></td><td><button type="reset">Очистити</button></td></tr>
+                <tr><td colspan="2"><textarea name="comment" cols="60" rows="5" required placeholder="Коментар"></textarea></td></tr>
+                <tr><td><input type="Submit" class="button"></td><td><input type="reset" class="button"></td></tr>
             </table>
         </form>
+        <hr>
+        <h3><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fvolodymyrcv.github.io%2FMySite%2Fdesktop.html">Валідатор</a></h3>
     </footer>
 </body>
 </html>
