@@ -11,9 +11,12 @@ h4 {text-align:center;}
 li:first-letter {color:red; font-variant:small-caps;}
 #portfolio {margin-top:40px; text-align:center;}
 #portfolio li {display:inline;}
-.controls {width:50px; cursor:pointer;}
-.project {height:170px; margin:20px; float:none;}
-footer h3 {text-decoration:underline;text-align:center;}
+#portfolio img:first-child {float:left;}
+.controls {width:50px; cursor:pointer; padding-top:80px;}
+div div {float:left; overflow:hidden;}
+ol {position:relative;}
+li img {height:190px; padding:10px; float:none;}
+footer h3 {margin-top: 110px; text-decoration:underline;text-align:center;}
 input, select {font-size:12pt; width:97%;}
 input::placeholder,textarea::placeholder {color:Green;}
 input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {color:Green;}

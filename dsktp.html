@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Мій сайт - версія для персональних комп'ютерів (>900px)</title>
-    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/dsktp.css">
 </head>
 <body>
     <header>
@@ -18,8 +18,8 @@
             <h2>Серебрянський Володимир</h2>
         </header>
         <img src="img/head.png" alt="Автор сайту">
-        <p>До вашої уваги пропонується персональна веб-сторінка учня 220 групи курсу 
-            <span>HTML/CSS/JavaScript Fundamentals</span> від компанії 
+        <p>До вашої уваги пропонується персональна веб-сторінка учня 220 групи курсу
+            <span>HTML/CSS/JavaScript Fundamentals</span> від компанії
             <span><i>Soft Serve</i></span> - Серебрянського Володимира
         </p>
         <h4>Загальна інформація:</h4>
@@ -33,14 +33,18 @@
         <header>
             <h1>Портфоліо</h1>
         </header>
-        <ul>
-            <li><img src="img/left.png" class="controls" alt="Попередній проект"></li>
-            <li><a href="https://ninjamock.com/s/5RVDH"><img src="img/portfolio/mockup_mysite_desktop.png" class="project" alt="Макет цього сайту" title="MockUp"></a></li>
-            <li><a href="https://volodymyrcv.github.io/HCJ_SS/"><img src="img/portfolio/html_some_tags.png" class="project" alt="Сторінка 2 заняття: HTML теґи" title="HTML теґи"></a></li>
-            <li><a href="https://volodymyrcv.github.io/SS_kourse/"><img src="img/portfolio/html_forms.png" class="project" alt="Сайт 3 заняття: HTML форми і таблиці" title="HTML форми"></a></a></li>
-            <li><img src="img/right.png" class="controls" alt="Наступний проект"></li>
-        </ul>
-    </section>
+        <div>
+	        <img src="img/left.png" class="controls" alt="Попередній проект" onmouseover="document.getElementById('run').style.left='-180px'">
+	        <div>
+                <ol id="run" onmousemove="document.getElementById('run').style.left='0px'">
+                    <li><a href="https://ninjamock.com/s/5RVDH"><img src="img/portfolio/mockup_mysite_desktop.png" alt="Макет цього сайту" title="MockUp"></a></li>
+                    <li><a href="https://volodymyrcv.github.io/HCJ_SS/"><img src="img/portfolio/html_some_tags.png" alt="Сторінка 2 заняття: HTML теґи" title="HTML теґи"></a></li>
+                    <li><a href="https://volodymyrcv.github.io/SS_kourse/"><img src="img/portfolio/html_forms.png" alt="Сайт 3 заняття: HTML форми і таблиці" title="HTML форми"></a></li>
+                </ol>
+        	</div>
+            <img src="img/right.png" class="controls" alt="Наступний проект" onmouseover="document.getElementById('run').style.left='210px'">
+        </div>
+        </section>
     <footer id="contacts">
         <h3>Контакти</h3>
         <form method="POST" action="formspree.io/gameundercover@bk.ru">
