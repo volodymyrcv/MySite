@@ -8,8 +8,9 @@ p {text-indent:10pt;}
 span {font-weight:bold}
 li:first-letter {color:red; font-variant:small-caps;}
 hr {box-shadow:2px 0px 15px 1px aqua}
+#portfolio li {display:inline;}
 .controls {width:50px; cursor:pointer;}
-.project {height:170px; margin:20px; float:none;}
+.project {height:150px;}
 footer h3 {text-decoration:underline;}
 input, select {font-size:12pt; width:97%;}
 input::placeholder,textarea::placeholder {color:Green;}
