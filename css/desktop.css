@@ -25,6 +25,7 @@ ol {left:0px; position:relative}
 @-o-keyframes rA {to{left:210px;}}
 li img {height:190px; padding:10px;}
 footer h3 {text-decoration:underline;text-align:center;}
+table {margin:0 auto;}
 input, select {font-size:12pt; width:97%;}
 input::placeholder,textarea::placeholder {color:Green;}
 input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {color:Green;}
