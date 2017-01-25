@@ -1,5 +1,5 @@
 body {width:900px; border:2px dashed red; font:14pt Georgia, serif; line-height: 18pt; text-align:justify;}
-body>header {background-color:white; position:fixed; top:0; width:900px;}
+body>header {background-color:white; position:fixed; top:0; width:900px; Z-index:1;}
 nav a {color:blue; font-size:16pt; margin-left:135px; text-decoration:none;}
 nav a:visited {color:blue;}
 nav a:first-child {font-weight:bold; text-decoration:underline;}
