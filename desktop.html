@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
     <title>Мій сайт - версія для персональних комп'ютерів (>900px)</title>
-    <link rel="stylesheet" href="css/dsktp.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" media="(min-width:900px)" href="css/desktop.css">
+    <link name="viewport" content="width:device-width, initial-scale=1">
 </head>
 <body>
     <header>
@@ -17,51 +18,71 @@
         <header>
             <h2>Серебрянський Володимир</h2>
         </header>
-        <img src="img/head.png" alt="Автор сайту">
-        <p>До вашої уваги пропонується персональна веб-сторінка учня 220 групи курсу
-            <span>HTML/CSS/JavaScript Fundamentals</span> від компанії
-            <span><i>Soft Serve</i></span> - Серебрянського Володимира
-        </p>
-        <h4>Загальна інформація:</h4>
-        <ul>
-            <li>Народився в м.Чернівці</li>
-            <li>Закінчив університет за спеціальністю "Інформатика"</li>
-            <li>Заочною формою навчання здобув рівень освіти - "Бакалавр"</li>
-        </ul>
+    	<div>
+	        <img src="img/head.png" alt="Автор сайту">
+            <p>До вашої уваги пропонується персональна веб-сторінка учня 220 групи курсу
+              <span>HTML/CSS/JavaScript Fundamentals</span> від компанії
+              <span><i>Soft Serve</i></span> - Серебрянського Володимира
+            </p>
+            <h4>Загальна інформація:</h4>
+            <ul>
+               <li>Народився в м.Чернівці</li>
+               <li>Закінчив університет за спеціальністю "Інформатика"</li>
+               <li>Заочною формою навчання здобув рівень освіти - "Бакалавр"</li>
+            </ul>
+    	</div>
     </section>
     <section id="portfolio">
         <header>
             <h1>Портфоліо</h1>
         </header>
-        <div>
-	        <img src="img/left.png" class="controls" alt="Попередній проект" onmouseover="document.getElementById('run').style.left='-180px'">
-	        <div>
-                <ol id="run" onmousemove="document.getElementById('run').style.left='0px'">
+    	<div>
+	        <img src="img/left.png" class="controls" alt="Попередній проект" onmouseover="document.getElementById('run').style.animation='lA 1s ease-out forwards'">
+    	    <div>
+                <ol id="run">
                     <li><a href="https://ninjamock.com/s/5RVDH"><img src="img/portfolio/mockup_mysite_desktop.png" alt="Макет цього сайту" title="MockUp"></a></li>
                     <li><a href="https://volodymyrcv.github.io/HCJ_SS/"><img src="img/portfolio/html_some_tags.png" alt="Сторінка 2 заняття: HTML теґи" title="HTML теґи"></a></li>
                     <li><a href="https://volodymyrcv.github.io/SS_kourse/"><img src="img/portfolio/html_forms.png" alt="Сайт 3 заняття: HTML форми і таблиці" title="HTML форми"></a></li>
                 </ol>
-        	</div>
-            <img src="img/right.png" class="controls" alt="Наступний проект" onmouseover="document.getElementById('run').style.left='210px'">
+    	    </div>
+	        <img src="img/right.png" class="controls" alt="Наступний проект" onmouseover="document.getElementById('run').style.animation='rA 1s ease-out forwards'">
         </div>
-        </section>
+    </section>
     <footer id="contacts">
         <h3>Контакти</h3>
         <form method="POST" action="formspree.io/gameundercover@bk.ru">
             <table>
-                <tr><th>Місто Чернівці</th><th>Мобільний телефон: (012) 345 67 89</th></tr>
-                <tr><th>Електронна пошта:</th><td><input type="email" minlength="5" placeholder="my@post.ua" required></td></tr>
-                <tr><th>Номер телефону:</th><td><input type="tel" pattern="\(\d{3}\)\s\d{3}\s\d{2}\s\d{2}" placeholder="(987) 654 32 10" title="(987) 654 32 10"></td></tr>
-                <tr><th>Ім'я:</th><td><input minlength="2" placeholder="Ваше ім'я" required></td></tr>
-                <tr><th>Тема</th><td>
-                    <select name="theme">
+                <tr>
+                    <th>Місто Чернівці</th>
+                    <th>Мобільний телефон: (012) 345 67 89</th>
+                </tr>
+                <tr>
+                    <th>Електронна пошта:</th>
+                    <td><input type="email" minlength="5" placeholder="my@post.ua" required></td>
+                </tr>
+                <tr>
+                    <th>Номер телефону:</th>
+                    <td><input type="tel" pattern="\(\d{3}\)\s\d{3}\s\d{2}\s\d{2}" placeholder="(987) 654 32 10" title="(987) 654 32 10"></td>
+                </tr>
+                <tr>
+                    <th>Ім'я:</th>
+                    <td><input minlength="2" placeholder="Ваше ім'я" required></td>
+                </tr>
+                <tr>
+                    <th>Тема</th>
+                    <td><select name="theme">
                         <option value="quest" selected>Питання</option>
                         <option value="prop">Пропозиція</option>
                         <option value="critic">Відгук</option>
-                    </select>
-                </td></tr>
-                <tr><td colspan="2"><textarea name="comment" cols="60" rows="5" required placeholder="Коментар"></textarea></td></tr>
-                <tr><td><input type="Submit" class="button"></td><td><input type="reset" class="button"></td></tr>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea name="comment" cols="60" rows="5" required placeholder="Коментар"></textarea></td>
+                </tr>
+                <tr>
+                    <td><input type="Submit" class="button"></td>
+                    <td><input type="reset" class="button"></td>
+                </tr>
             </table>
         </form>
         <hr>

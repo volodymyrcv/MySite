@@ -4,19 +4,27 @@ nav a {color:blue; font-size:16pt; margin-left:135px; text-decoration:none;}
 nav a:visited {color:blue;}
 nav a:first-child {font-weight:bold; text-decoration:underline;}
 h2 {font-size:19pt; text-align: center}
-#information img {filter:drop-shadow(10px 10px 50px yellow); -webkit-filter:drop-shadow(5px 10px 30px yellow); float:left; padding:25px; height:230px;}
+/*section div {display:flex; flex-flow:rows wrap; -webkit-flex-flow:rows wrap; justify-content:center;}*/
+#information img {filter:drop-shadow(10px 10px 50px yellow); -webkit-filter:drop-shadow(5px 10px 30px yellow); float:left;padding:25px; height:230px;}
 p {text-indent:15pt; padding:15px;}
 p span {font-weight:bold}
-h4 {text-align:center;}
 li:first-letter {color:red; font-variant:small-caps;}
-#portfolio {margin-top:40px; text-align:center;}
+#portfolio {margin-top:35px; text-align:center;}
+#portfolio div {display:flex; flex-direction:rows; justify-content:center}
 #portfolio li {display:inline;}
-#portfolio img:first-child {float:left;}
-.controls {width:50px; cursor:pointer; padding-top:80px;}
-div div {float:left; overflow:hidden;}
-ol {position:relative;}
-li img {height:190px; padding:10px; float:none;}
-footer h3 {margin-top: 110px; text-decoration:underline;text-align:center;}
+.controls {align-self:center; -webkit-align-self:center; width:50px; cursor:pointer;}
+div div {overflow:hidden;}
+ol {left:0px; position:relative}
+@keyframes lA {to{left:-180px;}}
+@-webkit-keyframes lA {to{left:-180px;}}
+@-moz-keyframes lA {to{left:-180px;}}
+@-o-keyframes lA {to{left:-180px;}}
+@keyframes rA {to{left:210px;}}
+@-webkit-keyframes rA {to {left:210px;}}
+@-moz-keyframes rA {to {left:210px;}}
+@-o-keyframes rA {to{left:210px;}}
+li img {height:190px; padding:10px;}
+footer h3 {text-decoration:underline;text-align:center;}
 input, select {font-size:12pt; width:97%;}
 input::placeholder,textarea::placeholder {color:Green;}
 input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {color:Green;}
